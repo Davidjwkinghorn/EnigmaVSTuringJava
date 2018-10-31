@@ -62,7 +62,8 @@ public class EnigmaMachine{
             }
         }
     }
-
+    
+    //TODO: remove unneeded getters/setters
     public Character[] getInput() {
         return input;
     }
