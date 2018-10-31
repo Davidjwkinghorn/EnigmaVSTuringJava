@@ -12,13 +12,19 @@ public class Plugboard{
         this.mapping = new HashMap<>();
     }
 
+    /**
+     * Connects a new plug to the plug board, switching two letters
+     *\
     public void addPlug(char char1, char char2) {
         if (char1 != char2) {
             this.mapping.put(char1, char2);
             this.mapping.put(char2, char1);
         }
     }
-
+    
+    /**
+     * Disconnects a plug to the plug board, switching two letters
+     *\
     public void removePlug(char char1) {
         if (mapping.containsKey(char1)) {
             mapping.remove(mapping.get(char1));
