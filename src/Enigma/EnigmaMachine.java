@@ -29,7 +29,10 @@ public class EnigmaMachine{
         }
         this.rotors = tempRotors.toArray(this.rotors);
     }
-
+    
+    /**
+     * Runs encryption for a given message
+     */
     public Character[] encrypt(Character[] message) {
         Character[] result = new Character[message.length];
         int rotVal = -1;
@@ -51,7 +54,12 @@ public class EnigmaMachine{
         output = result;
         return result;
     }
-
+    
+    // TODO: Decrypt message
+    
+    /**
+     * Sets the Enigma settings
+     */
     public void setSettings(Character[] chars) {
         if (chars.length == rotors.length) {
             int i = 0;
