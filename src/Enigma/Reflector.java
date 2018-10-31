@@ -19,7 +19,10 @@ public class Reflector{
             this.wheel.put(reference[i], reference[(i + 7) % 26]);
         }
     }
-
+    
+    /**
+     * Sets the position of a reflector component.
+     */
     void setPosition(int j) {
         for (int i = 0; i < reference.length; i++) {
             this.wheel.put(reference[i], reference[(i + j) % 26]);
