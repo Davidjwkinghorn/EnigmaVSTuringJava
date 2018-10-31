@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 /**
  * Created by dave on 8/17/17.
+ * Class representing an entire Enigma machine.
  */
 public class EnigmaMachine{
     private Character[] input;
