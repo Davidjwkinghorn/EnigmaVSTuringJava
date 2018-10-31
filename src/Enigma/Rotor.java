@@ -17,18 +17,28 @@ public class Rotor{
                 17, 18, 19, 20, 21, 22, 23, 24, 25};
 //        System.out.println(Arrays.toString(wheel));
     }
-
+    
+    /**
+     * Sets the postion of the rotor to a given index
+     */
     void setPosition(int i) {
         while (i != wheel[0]) {
             rotate(1);
         }
         this.setting = i;
     }
-
+    
+    /**
+     * Rotates the postion of the rotor by a preset number
+     */
     public void rotate() {
-        rotate(2);
+        int preset = 2;
+        rotate(preset);
     }
-
+    
+    /**
+     * Rotates the postion of the rotor by a given amount
+     */
     private void rotate(int k) {
 
         Integer[] result = new Integer[wheel.length];
